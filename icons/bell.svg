@@ -1,0 +1,26 @@
+<svg
+  width="40"
+  height="40"
+  viewBox="0 0 32 32"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Bell -->
+  <path
+    d="M16 28a2.5 2.5 0 0 0 2.5-2.5h-5A2.5 2.5 0 0 0 16 28Zm8-7v-6c0-4.1-2.7-7.6-6.5-8.6V5a1.5 1.5 0 1 0-3 0v1.4C10.7 7.4 8 10.9 8 15v6l-2 2v1h20v-1l-2-2Z"
+    fill="#6EE7B7"
+  />
+
+  <!-- Notification badge -->
+  <circle cx="23" cy="9" r="6" fill="#EF4444" />
+  <text
+    x="23"
+    y="13"
+    text-anchor="middle"
+    font-size="10"
+    font-weight="bold"
+    fill="#fff"
+    font-family="Arial, sans-serif"
+  >
+    6
+  </text>
+</svg>

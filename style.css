@@ -1,0 +1,89 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f4f7fe;
+}
+.top-navbar{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.top-navbar-left{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* border: 1px solid black; */
+    gap: 20px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.vertical-divider{
+   background-color: #A4BBDB;
+    width: 3px;
+    height: 80px;
+    display: none;
+}
+.home-icon{
+        display: none;
+    }
+.top-navbar-right{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    gap:20px
+}
+.profile-avatar{
+    /* border: 1px solid red; */
+    border-radius: 50%;
+      height: 36px;
+      width: 36px;
+      /* object-fit: cover; */
+      cursor:pointer;    
+        border: 2px solid #e5e7eb;    
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.user-name{
+    color: #6ac5ac;
+    display: none;
+}
+.down-icon{
+    display: none;
+}
+
+
+@media(min-width:768px){
+
+    .logo{
+        margin-left:50px;
+    }
+    .home-icon{
+        display: block;
+    }
+    .top-navbar-right{
+        margin-right: 50px;
+    }
+    .vertical-divider{
+        display: block;
+    }
+    .user-name{
+        display: block;
+    }
+    .down-icon{
+         display: block;
+    }
+}

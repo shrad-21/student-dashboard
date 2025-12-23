@@ -1,0 +1,24 @@
+<svg
+  width="60"
+  height="60"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Background -->
+  <rect
+    x="4"
+    y="4"
+    width="40"
+    height="40"
+    rx="8"
+    fill="#EDE9FE"
+  />
+
+  <!-- Home icon -->
+  <path
+    d="M16 22L24 15L32 22V32C32 33.1 31.1 34 30 34H26V26H22V34H18C16.9 34 16 33.1 16 32V22Z"
+    fill="#8B5CF6"
+  />
+</svg>
+
