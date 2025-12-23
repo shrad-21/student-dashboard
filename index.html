@@ -1,38 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Dashnoard</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
     <!-- top navbar -->
     <div class="top-navbar">
-      <div class="top-navbar-left">
-        <img src="./images/color-flower-logo.png" class="logo" />
-        <span class="vertical-divider"></span>
-        <img src="icons/home.svg" alt="Home" class="home-icon" />
-      </div>
-
-      <div class="top-navbar-right">
-        <img src="icons/bell.svg" alt="Bell" />
-        <div class="user-profile">
-          <img
-            src="images/user-image.jpg"
-            class="profile-avatar"
-            alt="Profile"
-          />
-          <h3 class="user-name">Mony Roy</h3>
-          <img src="icons/downicon.svg" alt="downicon" class="down-icon" />
+        <div class="top-navbar-left">
+            <img src="./images/color-flower-logo.png" class="logo" />
+            <span class="vertical-divider"></span>
+            <img src="icons/home.svg" alt="Home" class="home-icon" />
         </div>
-      </div>
+
+        <div class="top-navbar-right">
+            <img src="icons/bell.svg" alt="Bell" />
+            <div class="user-profile">
+                <img src="images/user-image.jpg" class="profile-avatar" alt="Profile" />
+                <h3 class="user-name">Mony Roy</h3>
+                <img src="icons/downicon.svg" alt="downicon" class="down-icon" />
+            </div>
+        </div>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <!-- middle content -->
+    <div class="content-wrapper">
+        <!-- <h2>Sidebar</h2x> -->
+        <div class="student-profile-sidebar">
+            <!-- profile details -->
+            <div class="profile-details">
+                <img src="./images/user-image.jpg" class="profile-image" alt="profile image" />
+                <div class="student-info">
+                    <h3>Riya Rohit Jaiswal</h3>
+                    <div class="student-tags">
+                        <div class="age-info">Age : 8</div>
+                        <div class="grade-info">Grade : 3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- menu list  -->
+            <div class="sidebar-menu-list">
+                <div class="menu-item active">
+                    <div class="menu">
+                        <!-- <img src="./icons/assesment.svg" alt="assesment" /> -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- top-left square -->
+                            <rect x="3" y="3" width="6" height="6" rx="2" stroke="currentColor" stroke-width="2" />
+
+                            <!-- top-right square -->
+                            <rect x="15" y="3" width="6" height="6" rx="2" stroke="currentColor" stroke-width="2" />
+
+                            <!-- bottom-left square -->
+                            <rect x="3" y="15" width="6" height="6" rx="2" stroke="currentColor" stroke-width="2" />
+
+                            <!-- plus icon -->
+                            <path d="M18 15V21M15 18H21" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+
+                        <h3 class="menu-text">Assesment</h3>
+                    </div>
+                    <!-- <img src="./icons/downicon.svg" alt="down icon" /> -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="menu-item">
+                    <div class="menu">
+                        <!-- <img src="./icons/plans.svg" alt="plans" /> -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="2" />
+                            <path d="M3 7L12 13L21 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                        <h3 class="menu-text">Learning Plans</h3>
+                    </div>
+                    <!-- <img src="./icons/downicon.svg" alt="down icon" /> -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="menu-item">
+                    <div class="menu">
+                        <!-- <img src="./icons/archieve.svg" alt="archive" /> -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 5V17H20V5H4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M3 5H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+
+                            <path d="M9 20L12 17L15 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                            <path d="M8 14V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M12 14V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M16 14V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <h3 class="menu-text">Archive</h3>
+                    </div>
+                    <!-- <img src="./icons/downicon.svg" alt="down icon" /> -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <span class="menu-arrow"></span>
+            </div>
+        </div>
+
+        <image src="./icons/leftarrow.svg" alt="left arrow" class="left-arrow"></image>
+
+        <div class="student-profile-dashboard">
+
+            <div class="profile-header">
+                <h2 class="title">Student Profile</h2>
+                <div class="actions">
+                    <button class="notify-history">
+                        <img src="./icons/history.svg">
+                        Notify History</button>
+                    <!-- <div class="language-dropdown">
+                        <img src="./icons/translate.svg">
+                         <select>
+                            <option value="en" selected>English</option>
+                            <option value="hi">Hindi</option>
+                            <option value="hi">Marathi</option>
+                            </select> 
+                    </div> -->
+                     <button class="notify-history">
+                        <img src="./icons/translate.svg">
+                       English  <img src="./icons/downicon.svg"> </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
 </html>

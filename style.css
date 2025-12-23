@@ -1,89 +1,273 @@
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: #f4f7fe;
 }
-.top-navbar{
-    /* border: 1px solid black; */
-    display: flex;
+
+.top-navbar {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.top-navbar-left {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 1px solid black; */
+  gap: 20px;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+.vertical-divider {
+  background-color: #a4bbdb;
+  width: 3px;
+  height: 80px;
+  display: none;
+}
+.home-icon {
+  display: none;
+}
+.top-navbar-right {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  gap: 20px;
+}
+.profile-avatar {
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  /* object-fit: cover; */
+  cursor: pointer;
+  border: 2px solid #e5e7eb;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.user-name {
+  color: #6ac5ac;
+  display: none;
+}
+.down-icon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-left: 50px;
+  }
+  .home-icon {
+    display: block;
+  }
+  .top-navbar-right {
+    margin-right: 50px;
+  }
+  .vertical-divider {
+    display: block;
+  }
+  .user-name {
+    display: block;
+  }
+  .down-icon {
+    display: block;
+  }
+}
+
+/* middle content css */
+.content-wrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  margin: 30px;
+}
+.student-profile-sidebar {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+}
+.profile-image {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  /* object-fit: cover; */
+  cursor: pointer;
+  border: 2px solid #e5e7eb;
+}
+.profile-details {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #d9d5d5;
+  padding: 0 15px 15px 15px;
+}
+.left-arrow {
+  position: absolute;
+  right: 74%;
+  top: 25%;
+  display: none;
+}
+.student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* display: none; */
+}
+.student-tags {
+  display: flex;
+  gap: 20px;
+}
+.age-info {
+  /* border: 1px solid red; */
+  padding: 6px;
+  background-color: #ebfbff;
+  color: #4bb396;
+  font-weight: 700;
+  border-radius: 2px;
+}
+.grade-info {
+  /* border: 1px solid red; */
+  font-weight: 700;
+  border-radius: 2px;
+
+  padding: 6px;
+  background-color: #f5f9ff;
+  color: #7e65bb;
+}
+.sidebar-menu-list {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: none;
+}
+.menu-item {
+  display: flex;
+  /* gap:20px; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.5s ease;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+  color: #6c7c91;
+}
+/* .menu-text{
+    color:#6c7c91
+} */
+
+.menu-item:hover {
+  background-color: #eef2ff;
+  color: #5047e5;
+}
+.menu-item:hover .menu {
+  color: #5047e5;
+}
+.menu-item.active {
+  background: #eef2ff;
+  color: #5047e5;
+}
+.menu-item.active .menu {
+  color: #5047e5;
+  font-weight: 900;
+}
+
+.student-profile-dashboard {
+  width: 100%;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #edeefe;
+  padding: 30px;
+  border-radius: 10px 10px 0 0;
+}
+.title {
+  color: #2b3674;
+}
+.actions {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+}
+.notify-history {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+  font-weight: 900;
+}
+/* .language-dropdown{
+     display: flex;
+    align-items: center;
+    gap:10px;
+    background: #ffffff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-family:"Nunito", sans-serif;
+    color: #777777;
+    font-weight: 900 ;
+} */
+
+@media (min-width: 768px) {
+  .profile-header {
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff;
-}
-.top-navbar-left{
-    display: flex;
+  }
+  .actions {
+    /* flex-direction: row; */
     align-items: center;
-    /* justify-content: center; */
-    /* border: 1px solid black; */
-    gap: 20px;
+  }
 }
-.logo{
-    height: 100px;
-    width: 100px;
-    margin-left: 20px;
-    margin-right: 50px;
+@media (min-width: 992px) {
+  .content-wrapper {
+    flex-direction: row;
+  }
+  .student-profile-sidebar {
+    width: 25%;
+  }
+  .student-profile-dashboard {
+    width: 75%;
+  }
+  .sidebar-menu-list {
+    display: block;
+  }
 }
-.vertical-divider{
-   background-color: #A4BBDB;
-    width: 3px;
-    height: 80px;
+@media (min-width: 1024px) {
+  .left-arrow {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1220px) {
+  .student-tags {
     display: none;
-}
-.home-icon{
-        display: none;
-    }
-.top-navbar-right{
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-    gap:20px
-}
-.profile-avatar{
-    /* border: 1px solid red; */
-    border-radius: 50%;
-      height: 36px;
-      width: 36px;
-      /* object-fit: cover; */
-      cursor:pointer;    
-        border: 2px solid #e5e7eb;    
-}
-.user-profile{
-    display: flex;
-    align-items: center;
-    gap:20px;
-}
-.user-name{
-    color: #6ac5ac;
-    display: none;
-}
-.down-icon{
-    display: none;
-}
-
-
-@media(min-width:768px){
-
-    .logo{
-        margin-left:50px;
-    }
-    .home-icon{
-        display: block;
-    }
-    .top-navbar-right{
-        margin-right: 50px;
-    }
-    .vertical-divider{
-        display: block;
-    }
-    .user-name{
-        display: block;
-    }
-    .down-icon{
-         display: block;
-    }
+  }
 }
