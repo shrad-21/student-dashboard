@@ -6,3 +6,14 @@ menuItems.forEach((item) => {
     item.classList.add("active");
   });
 });
+
+  const arrow = document.querySelector(".arrow-icon-down");
+
+  arrow.addEventListener("click", () => {
+    arrow.classList.toggle("rotate");
+  });
+
+  document.querySelectorAll(".pill-fill").forEach((bar) => {
+    bar.style.height = bar.dataset.value + "%";
+  });
+
